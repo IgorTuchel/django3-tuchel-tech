@@ -1,0 +1,42 @@
+.navbar-nav .nav-link {
+    
+    color: rgba(0,0,0,1) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    
+    color: rgba(28, 14, 221, 0.5) !important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    
+}
+
+#blogtitle {
+    font-size: 6rem;
+}
+
+@media (min-width: 992px) {
+    #hometext {
+        font-size: 4rem;
+    }
+    #blogdetailtitle {
+        font-size: 5rem;
+    }
+    .tuchel{
+        font-size: 1rem;
+        
+    }
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 20% 19%;
+  }

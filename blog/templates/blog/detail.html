@@ -1,0 +1,28 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<style>
+	
+	#cool{
+		margin-top: 20px;
+	
+	}
+	
+</style>
+
+<h1 class="text-center mt-5" id="blogdetailtitle">{{ blog.title }}</h1>
+
+	<h5 class="text-center text-primary mb-5 cool">{{ blog.date|date:'F jS Y' }}</h5>
+	
+	<div class="blogBody border-primary">
+	{{ blog.description|safe }}
+</div>
+
+	<center>
+		<a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary" id="cool">Back To All Blogs</a>
+	</center>
+
+{% endblock %}
